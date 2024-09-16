@@ -8,7 +8,7 @@ public class Decisiones {
             System.out.println("Peliculas más populares");
         }
         else {
-            System.out.println("Peliculas Retro que aun valen la pena ver");
+            System.out.println("Peliculas Retro que aun valen la pena ver12");
         }
 
 
