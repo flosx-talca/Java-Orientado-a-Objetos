@@ -12,7 +12,7 @@ public class Decisiones {
         else {
             System.out.println("Peliculas Retro que aun valen la pena ver12");
         }
-        if (incluidoEnElPlan ||  tipoPlan.equals("plus")) {
+        if (incluidoEnElPlan &&  tipoPlan.equals("plus")) {
             System.out.println("Disfrute de su pelicula");
         }
         else {
