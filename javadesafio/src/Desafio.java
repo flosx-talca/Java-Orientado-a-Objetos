@@ -16,7 +16,7 @@ public class Desafio {
         Scanner teclado = new Scanner(System.in);
         while (opcion != 9){
             String menu= """
-                 *** Escriba la opcion deseada ***
+                 \n*** Escriba la opcion deseada ***
                 1 - Consultar Saldo
                 2 - Retirar
                 3 - Depositar
@@ -48,13 +48,12 @@ public class Desafio {
                         System.out.println("El saldo actualizado es: "+saldo);
                         break;
                     case 9:
+                        System.out.println("Saliendo del programa, gracias por utilizar nuestro servicios");
                         break;
-
-
+                    default:
+                        System.out.println("Opcion no valida");
+                        break;
             }
-
-
         }
     }
-
 }
