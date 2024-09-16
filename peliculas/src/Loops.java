@@ -7,7 +7,7 @@ public class Loops {
         double  mediaEvaluaciones=0;
 
         for (int i = 0; i < 3 ; i++) {
-            System.out.println("Digite una nota" + (i + 1) + ": ");
+            System.out.println("Digite una nota para matrix" + (i + 1) + ": ");
             nota = teclado.nextDouble();
             mediaEvaluaciones = mediaEvaluaciones + nota;
         }
