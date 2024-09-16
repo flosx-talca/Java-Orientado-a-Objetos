@@ -6,7 +6,13 @@ public class Lectura {
         System.out.println("Escribe el nombre de tu pelicula");
         String pelicula = teclado.nextLine();
         System.out.println("Ahora escribe la fecha de lanzamiento");
-        String fechaDeLanzamiento = teclado.nextInt();
-        System.out.println("E");
+        int fechaDeLanzamiento = teclado.nextInt();
+        System.out.println("Por ultimo di que nota nos das a esta pelicula");
+        double nota = teclado.nextDouble();
+
+        System.out.println(pelicula);
+        System.out.println(fechaDeLanzamiento);
+        System.out.println(nota);
+
     }
 }
