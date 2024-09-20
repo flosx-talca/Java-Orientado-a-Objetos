@@ -6,6 +6,6 @@ public class Principal {
         miPelicula.duracionEnMinutos = 120;
         miPelicula.incluidoEnElPlan = true;
 
-        System.out.println("Mi pelicla es");
+        System.out.println("Mi pelicla es matrix");
     }
 }
