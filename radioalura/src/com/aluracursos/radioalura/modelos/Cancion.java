@@ -5,6 +5,17 @@ public class Cancion  extends Audio{
      private String cantante;
      private String genero;
 
+     @Override
+     public int getClasificacion() {
+          //return super.getClasificacion();
+          if (getTotalMeGusta()>5000) {
+              return 8;
+          } 
+          else{
+               return 4;
+          }
+     }
+
      public String getAlbum() {
           return album;
      }
@@ -28,4 +39,5 @@ public class Cancion  extends Audio{
      public void setGenero(String genero) {
           this.genero = genero;
      }
+
 }
