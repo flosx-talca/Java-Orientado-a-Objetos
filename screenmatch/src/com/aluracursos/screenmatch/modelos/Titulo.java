@@ -52,10 +52,12 @@ public class Titulo {
         totalDelasEvaluaciones++;
     }
     public int getTotalDelasEvaluaciones() {
+
         return totalDelasEvaluaciones;
     }
 
     public double calculaMedia(){
+
         return sumaDeLasEvaluaciones / totalDelasEvaluaciones;
     }
 }
