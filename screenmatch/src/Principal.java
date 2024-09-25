@@ -1,3 +1,4 @@
+import com.aluracursos.screenmatch.calculos.CalculadoraDeTiempo;
 import com.aluracursos.screenmatch.modelos.Pelicula;
 import com.aluracursos.screenmatch.modelos.Serie;
 
@@ -24,6 +25,17 @@ public class Principal {
         casaDragon.setEpisodiosPorTemporada(10);
         casaDragon.muestraFichaTecnica();
         System.out.println(casaDragon.getDuracionEnMinutos());
+        Pelicula otraPelicula = new Pelicula();
+        otraPelicula.setNombre("Otra");
+        otraPelicula.setFechaDeLanzamiento(2021);
+        otraPelicula.setDuracionEnMinutos(180);
+
+        CalculadoraDeTiempo calculadora = new CalculadoraDeTiempo();
+        calculadora.incluye(miPelicula);
+        calculadora.incluye(casaDragon);
+        calculadora.incluye(otraPelicula);
+        System.out.println("Tiempo necesario para ver los titulos favoritos: "+calculadora.getTiempoTotal()+" minutos");
+
                // System.out.printf("solo nombre "+miPelicula.getNombre());
 
 
