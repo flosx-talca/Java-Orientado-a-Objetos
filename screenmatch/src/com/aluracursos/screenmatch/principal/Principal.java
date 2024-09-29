@@ -1,3 +1,5 @@
+package com.aluracursos.screenmatch.principal;
+
 import com.aluracursos.screenmatch.calculos.CalculadoraDeTiempo;
 import com.aluracursos.screenmatch.calculos.FiltroRecomendacion;
 import com.aluracursos.screenmatch.modelos.Episodio;
@@ -47,7 +49,7 @@ public class Principal {
         var peliculaDeBruno = new Pelicula("El señor de los anillos", 2001);
 
         peliculaDeBruno.setDuracionEnMinutos(120);
-        
+
 
         ArrayList<Pelicula> listaDePeliculas = new ArrayList<>();
         listaDePeliculas.add(peliculaDeBruno);
