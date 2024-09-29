@@ -5,6 +5,13 @@ public class Serie extends Titulo {
     private int episodiosPorTemporada;
     private int minutosPorEpisodio;
 
+
+    //constructor (para no pasar la variable con los setetr setnombre en este caso)
+    // constructor heredado de la super clase Titulo
+    public Serie(String nombre, int fechaDeLanzamiento) {
+        super(nombre, fechaDeLanzamiento);
+    }
+
     @Override
     public int getDuracionEnMinutos() {
         return temporadas*episodiosPorTemporada*minutosPorEpisodio;

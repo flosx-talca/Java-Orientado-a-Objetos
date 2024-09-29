@@ -5,6 +5,13 @@ import com.aluracursos.screenmatch.calculos.Clasificacion;
 public class Pelicula extends Titulo implements Clasificacion {
     private String director;
 
+    //constructor (para no pasar la variable con los setetr setnombre en este caso)
+    // constructor heredado de la super clase Titulo
+
+      public Pelicula(String nombre, int fechaDeLanzamiento) {
+        super(nombre, fechaDeLanzamiento); // hace referencia al constructor de la super clase Titulo con 2 parametro
+    }
+
     public String getDirector() {
 
         return director;
