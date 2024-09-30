@@ -4,9 +4,7 @@ import com.aluracursos.screenmatch.modelos.Pelicula;
 import com.aluracursos.screenmatch.modelos.Serie;
 import com.aluracursos.screenmatch.modelos.Titulo;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
+import java.util.*;
 
 public class PrincipalConListas {
 
@@ -34,7 +32,7 @@ public class PrincipalConListas {
 
 
         }
-        ArrayList<String>  listaDeArtistas = new ArrayList<>();
+        List<String> listaDeArtistas = new LinkedList<>();
         listaDeArtistas.add("Penelope Cruz");
         listaDeArtistas.add("Antonio Banderas");
         listaDeArtistas.add("Pedro Pascal");
@@ -43,6 +41,10 @@ public class PrincipalConListas {
         System.out.println("Lista de artista  ordenada" + listaDeArtistas);
         listaDeArtistas.sort(Comparator.reverseOrder());
         System.out.println(listaDeArtistas);
+        Collections.sort(lista);
+        System.out.println("Array list ordenado con implements en clase Titulo: "+ lista);
+        lista.sort(Comparator.comparing(Titulo::getFechaDeLanzamiento));
+        System.out.println("Lista ordenada por fecha"+lista);
 
 
     }
