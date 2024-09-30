@@ -43,6 +43,8 @@ public class PrincipalConListas {
         System.out.println(listaDeArtistas);
         Collections.sort(lista);
         System.out.println("Array list ordenado con implements en clase Titulo: "+ lista);
+
+        //ordenatr lista
         lista.sort(Comparator.comparing(Titulo::getFechaDeLanzamiento));
         System.out.println("Lista ordenada por fecha"+lista);
 
