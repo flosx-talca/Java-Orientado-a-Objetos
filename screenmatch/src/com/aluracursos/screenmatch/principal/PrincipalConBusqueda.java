@@ -40,6 +40,9 @@ public class PrincipalConBusqueda{
 
             Titulo  miTitulo = new Titulo(miTituloOmdb);
             System.out.println("Titulo ya convertido" + miTitulo);
+
+
+
         }catch (NumberFormatException e){
             System.out.println("Ocurrio un error: ");
             System.out.println(e.getMessage());
