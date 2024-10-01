@@ -1,0 +1,26 @@
+[
+  {
+    "Title": "Matrix",
+    "Year": 1993,
+    "DuracionEnMinutos": 60,
+    "IncluidoEnElPlan": false,
+    "SumaDeLasEvaluaciones": 0.0,
+    "TotalDelasEvaluaciones": 0
+  },
+  {
+    "Title": "Forrest Gump",
+    "Year": 1994,
+    "DuracionEnMinutos": 142,
+    "IncluidoEnElPlan": false,
+    "SumaDeLasEvaluaciones": 0.0,
+    "TotalDelasEvaluaciones": 0
+  },
+  {
+    "Title": "Encanto",
+    "Year": 2021,
+    "DuracionEnMinutos": 102,
+    "IncluidoEnElPlan": false,
+    "SumaDeLasEvaluaciones": 0.0,
+    "TotalDelasEvaluaciones": 0
+  }
+]
