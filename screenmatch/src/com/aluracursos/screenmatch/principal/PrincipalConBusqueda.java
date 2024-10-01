@@ -22,6 +22,8 @@ import java.util.Scanner;
 // https://unpocodejava.com/2013/01/02/un-poco-de-patrones-de-diseno-gof-gang-of-four/ leer
 public class PrincipalConBusqueda{
     public static void main(String[] args) throws IOException, InterruptedException {
+
+
         Scanner lectura = new Scanner(System.in);
         List<Titulo> titulos = new ArrayList<>();
         Gson gson = new GsonBuilder().setFieldNamingPolicy(FieldNamingPolicy.UPPER_CAMEL_CASE).setPrettyPrinting().create(); // esta funcion es para respetrar las variables en minusculas, peor que el json trae las claves en mayus
@@ -41,7 +43,7 @@ public class PrincipalConBusqueda{
                         .uri(URI.create(direccion))
                         .build();
 
-                HttpResponse<String> response = client
+                HttpResponse <String> response = client
                         .send(request, HttpResponse.BodyHandlers.ofString());
                 String json = response.body();
                 System.out.println(json);
